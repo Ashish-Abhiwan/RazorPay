@@ -6,8 +6,8 @@ import axios from 'axios'
 const Home = () => {
   const checkouthandler = async (amount) => {
 
-    const {data : {key}} = await axios.get("https://razorpay-react.onrender.com/api/getkey")
-    const {data : {order}} = await axios.post("https://razorpay-react.onrender.com/api/checkout", {
+    const {data : {key}} = await axios.get("https://razorpay-af6r.onrender.com/api/getkey")
+    const {data : {order}} = await axios.post("https://razorpay-af6r.onrender.com/api/checkout", {
         amount
     })
     // console.log(data)
@@ -20,7 +20,7 @@ const Home = () => {
         description: "Test Transaction",
         image: "https://cdn.dribbble.com/users/3293507/screenshots/14667603/media/d8cbe035a61f64afdf6deabca5182842.jpg?compress=1&resize=400x300&vertical=center",
         order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-        callback_url: "https://razorpay-react.onrender.com/api/paymentverification",
+        callback_url: "https://razorpay-af6r.onrender.com/api/paymentverification",
         prefill: {
             name: "ASHISH ABHIWAN",
             email: "ashish.abhiwan@gmail.com",

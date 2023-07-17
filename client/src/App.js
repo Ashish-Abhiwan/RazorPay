@@ -16,6 +16,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/paymentsuccess" element={<PaymentSuccess />} />
+            <Route path="/login" element={<PaymentSuccess />} />
           </Routes>
         </Router>
       </ColorModeProvider>
