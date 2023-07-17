@@ -22,15 +22,15 @@ const Home = () => {
         order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         callback_url: "http://localhost:5000/api/paymentverification",
         prefill: {
-            name: "Gaurav Kumar",
-            email: "gaurav.kumar@example.com",
-            contact: "9000090000"
+            name: "ASHISH ABHIWAN",
+            email: "ashish.abhiwan@gmail.com",
+            contact: "1234567890"
         },
         notes: {
             address: "Razorpay Corporate Office"
         },
         theme: {
-            color: "#3399cc"
+            color: "#2b2b2c"
         }
     };
     const razor = new window.Razorpay(options);
@@ -38,13 +38,14 @@ const Home = () => {
   };
   return (
     <Box>
-      <Stack direction={["column", "row"]} h={"100vh"} justifyContent={"center"} alignItems={"center"}>
+      <Stack direction={["column", "row"]} h={"85vh"} justifyContent={"center"} alignItems={"center"}>
         <Card
           amount={5000}
           img={
             "https://img.lovepik.com/free-png/20210926/lovepik-black-and-red-headphone-wireless-headset-png-image_401422578_wh1200.png"
           }
           checkouthandler={checkouthandler}
+          css = {{mixBlendMode : "hard-light"}}
         />
         <Card
           amount={8000}
