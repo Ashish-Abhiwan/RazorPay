@@ -4,7 +4,6 @@ import { useSearchParams } from 'react-router-dom'
 
 const PaymentSuccess = () => {
     const searchQuery = useSearchParams()[0]
-    // console.log(useSearchParams()[0].get("reference"))
     const referenceNum = searchQuery.get("reference")
   return (
     <Box>
